@@ -1,6 +1,6 @@
 package com.Biai;
 
-import com.Biai.GeneticAlgorithm.Prisoner;
+import com.Biai.GeneticAlgorithm.PrisonerGenetic;
 
 public class Main {
 
