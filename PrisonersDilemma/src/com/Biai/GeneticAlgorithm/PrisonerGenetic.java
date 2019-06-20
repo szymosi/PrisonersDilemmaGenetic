@@ -47,4 +47,7 @@ public class PrisonerGenetic {
             memory.add(0, result);
         this.points += points;
     }
+    public void mutate(){//TODO
+
+    }
 }

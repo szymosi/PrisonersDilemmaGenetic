@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd718305-579d-46cf-9a64-ed3a592d12ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PrisonersDilemmaGenetic.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/Prisoner.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/Prisoner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrisonersDilemma/PrisonersDilemma.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,30 +14,54 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/Prisoner.java">
+        <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Prisoner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="27" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/PrisonerGenetic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="48" column="5" selection-start-line="7" selection-end-line="48" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java">
+        <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="624">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,19 +77,22 @@
       <list>
         <option value="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/Prisoner.java" />
         <option value="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java" />
+        <option value="$PROJECT_DIR$/PrisonersDilemma/PrisonersDilemma.iml" />
+        <option value="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1294" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="975" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,13 +133,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="Biai" type="462c0819:PsiDirectoryNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PrisonersDilemmaGenetic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PrisonersDilemmaGenetic" type="462c0819:PsiDirectoryNode" />
+              <item name="PrisonersDilemma" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Biai" type="462c0819:PsiDirectoryNode" />
               <item name="GeneticAlgorithm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -126,6 +159,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Studia\BIAL\PrisonersDilemmaGenetic\PrisonersDilemma\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,6 +177,15 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_181\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -151,16 +198,20 @@
       <updated>1560015430226</updated>
       <workItem from="1560015432980" duration="820000" />
       <workItem from="1560016282328" duration="123000" />
+      <workItem from="1560271785687" duration="437000" />
+      <workItem from="1560272271448" duration="363000" />
+      <workItem from="1561051785636" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="943000" />
+    <option name="totallyTimeSpent" value="1758000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1294" height="1047" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25364667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -195,22 +246,43 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/Prisoner.java">
+    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/Prisoner.java" />
+    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/PrisonersDilemma.iml" />
+    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java">
+    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="527">
+          <caret line="31" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Prisoner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/PrisonerGenetic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="48" column="5" selection-start-line="7" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
