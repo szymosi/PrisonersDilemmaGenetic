@@ -51,9 +51,20 @@ public class PrisonerGenetic {
             memory.add(0, result);
         this.points += points;
     }
-    public void mutate(){//TODO
 
+    public void mutate(int numberOfMutations){
+        Random r=new Random();
+        for (int i=0;i<numberOfMutations;i++)
+        {
+            int a=r.nextInt(4);
+            int b=r.nextInt(4);
+            int c=r.nextInt(4);
+            int d=r.nextInt(4);
+            int e=r.nextInt(4);
+            knowledge[a][b][c][d][e]=!knowledge[a][b][c][d][e];
+        }
     }
+    //TODO iffrent corssover mechanics
     public PrisonerGenetic crossover(PrisonerGenetic prisonerGenetic)
     {
         Boolean[][][][][] knowledge = new Boolean[4][4][4][4][4];

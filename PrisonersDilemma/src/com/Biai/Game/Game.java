@@ -23,16 +23,16 @@ public class Game {
         boolean p2 = prisoner.play();
         if (p1 && p2) {
             prisonerGenetic.roundEnd(0, 3);
-            prisoner.addPoints(3);
+            prisoner.roundEnd(0,3);
         } else if (p1 && !p2) {
             prisonerGenetic.roundEnd(1, 0);
-            prisoner.addPoints(5);
+            prisoner.roundEnd(2,5);
         } else if (!p1 && p2) {
             prisonerGenetic.roundEnd(2, 5);
-            prisoner.addPoints(0);
+            prisoner.roundEnd(1,0);
         } else if (!p1 && !p2) {
             prisonerGenetic.roundEnd(3, 1);
-            prisoner.addPoints(1);
+            prisoner.roundEnd(3,1);
         }
     }
 

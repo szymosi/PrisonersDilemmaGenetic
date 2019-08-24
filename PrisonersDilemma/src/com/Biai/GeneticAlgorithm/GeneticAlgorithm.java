@@ -26,6 +26,8 @@ public class GeneticAlgorithm {
         this.enemiesTactic = enemiesTactic;
         this.mutationChance = mutationChance;
         this.numberOfMutations = numberOfMutations;
+        if(numberOfMutations>1024)
+            this.numberOfMutations=1024;
         this.numberOfGenerations = numberOfGenerations;
         this.selectionSize = selectionSize;
         createGames();
@@ -55,7 +57,7 @@ public class GeneticAlgorithm {
             prisoners.add(games[i].getPrisonerGenetic());
         return prisoners;
     }
-//TODO inteligent prisoner choose
+    //TODO population choose algorithm
     private void createNewGeneration() {
         ArrayList<PrisonerGenetic> prisoners = getTheBestPrisoners();
         Game[]games=new Game[population];
@@ -70,7 +72,7 @@ public class GeneticAlgorithm {
         Random random = new Random();
         for (Game game : games) {
             if (random.nextInt(100) < mutationChance) {
-                game.getPrisonerGenetic().mutate();
+                game.getPrisonerGenetic().mutate(numberOfMutations);
             }
         }
     }
