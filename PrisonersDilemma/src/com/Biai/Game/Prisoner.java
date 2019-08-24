@@ -15,6 +15,11 @@ public class Prisoner {
         switch (tactic) {
             case 1:
                 return r.nextBoolean();
+            case 2:
+                return true;
+            case 3:
+                return false;
+
         }
         return true;
     }

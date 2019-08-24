@@ -11,6 +11,11 @@ public class Game {
         this.prisoner = new Prisoner(tactic);
     }
 
+    public Game(int tactic,PrisonerGenetic prisonerGenetic) {
+        this.prisonerGenetic = prisonerGenetic;
+        this.prisoner = new Prisoner(tactic);
+    }
+
     public void round() {
         //true - cooperate
         //false - betray
@@ -29,5 +34,13 @@ public class Game {
             prisonerGenetic.roundEnd(3, 1);
             prisoner.addPoints(1);
         }
+    }
+
+    public PrisonerGenetic getPrisonerGenetic() {
+        return prisonerGenetic;
+    }
+
+    public int GetPrisonerGeneticPoints(){
+        return prisonerGenetic.getPoints();
     }
 }

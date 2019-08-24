@@ -16,8 +16,10 @@ public class PrisonerGenetic {
     private Boolean[][][][][] knowledge = new Boolean[4][4][4][4][4];
     private int points = 0;
 
+    public PrisonerGenetic(){randomFill();}
+    public PrisonerGenetic(Boolean[][][][][] knowledge){this.knowledge=knowledge;}
 
-    public void randomFill() {
+    private void randomFill() {
         Random r = new Random();
         for (int a = 0; a < 4; a++)
             for (int b = 0; b < 4; b++)
@@ -35,6 +37,8 @@ public class PrisonerGenetic {
         return points;
     }
 
+    public Boolean[][][][][] getKnowledge(){return knowledge;};
+
     public boolean play() {
         if (memory.size() >= 5)
             return knowledge[memory.get(0)][memory.get(1)][memory.get(2)][memory.get(3)][memory.get(4)];
@@ -49,5 +53,20 @@ public class PrisonerGenetic {
     }
     public void mutate(){//TODO
 
+    }
+    public PrisonerGenetic crossover(PrisonerGenetic prisonerGenetic)
+    {
+        Boolean[][][][][] knowledge = new Boolean[4][4][4][4][4];
+        Random r = new Random();
+        for (int a = 0; a < 4; a++)
+            for (int b = 0; b < 4; b++)
+                for (int c = 0; c < 4; c++)
+                    for (int d = 0; d < 4; d++)
+                        for (int e = 0; e < 4; e++)
+                            if(r.nextBoolean())
+                                knowledge[a][b][c][d][e]=this.knowledge[a][b][c][d][e];
+                            else
+                                knowledge[a][b][c][d][e]=prisonerGenetic.getKnowledge()[a][b][c][d][e];
+        return new PrisonerGenetic(knowledge);
     }
 }
