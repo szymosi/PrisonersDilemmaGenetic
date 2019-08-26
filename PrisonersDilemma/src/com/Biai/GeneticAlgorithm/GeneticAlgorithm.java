@@ -57,13 +57,31 @@ public class GeneticAlgorithm {
             prisoners.add(games[i].getPrisonerGenetic());
         return prisoners;
     }
-    //TODO population choose algorithm
     private void createNewGeneration() {
         ArrayList<PrisonerGenetic> prisoners = getTheBestPrisoners();
         Game[]games=new Game[population];
         Random r=new Random();
+        int sum=0;
+        for(PrisonerGenetic prisoner:prisoners)
+            sum+=prisoner.getPoints();
         for (int i = 0; i < population; i++) {
-            games[i]=new Game(enemiesTactic,prisoners.get(r.nextInt(prisoners.size())).crossover(prisoners.get(r.nextInt(prisoners.size()))));
+            int id=r.nextInt(sum);
+            int tmp=0;
+            int a=-1;
+            while(tmp<=id)
+            {
+                a++;
+                tmp+=prisoners.get(a).getPoints();
+            }
+            id=r.nextInt(sum);
+            tmp=0;
+            int b=-1;
+            while(tmp<=id)
+            {
+                b++;
+                tmp+=prisoners.get(b).getPoints();
+            }
+            games[i]=new Game(enemiesTactic,prisoners.get(a).crossover(prisoners.get(b)));
         }
         this.games=games;
     }
