@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+
 public class PrisonerGenetic {
 
     /*
@@ -64,20 +65,63 @@ public class PrisonerGenetic {
             knowledge[a][b][c][d][e]=!knowledge[a][b][c][d][e];
         }
     }
-    //TODO iffrent corssover mechanics
+
     public PrisonerGenetic crossover(PrisonerGenetic prisonerGenetic)
     {
         Boolean[][][][][] knowledge = new Boolean[4][4][4][4][4];
         Random r = new Random();
-        for (int a = 0; a < 4; a++)
-            for (int b = 0; b < 4; b++)
-                for (int c = 0; c < 4; c++)
-                    for (int d = 0; d < 4; d++)
-                        for (int e = 0; e < 4; e++)
-                            if(r.nextBoolean())
-                                knowledge[a][b][c][d][e]=this.knowledge[a][b][c][d][e];
-                            else
-                                knowledge[a][b][c][d][e]=prisonerGenetic.getKnowledge()[a][b][c][d][e];
+        int crossover=0;
+        if(crossover==0) {
+            for (int a = 0; a < 4; a++)
+                for (int b = 0; b < 4; b++)
+                    for (int c = 0; c < 4; c++)
+                        for (int d = 0; d < 4; d++)
+                            for (int e = 0; e < 4; e++)
+                                if (r.nextBoolean())
+                                    knowledge[a][b][c][d][e] = this.knowledge[a][b][c][d][e];
+                                else
+                                    knowledge[a][b][c][d][e] = prisonerGenetic.getKnowledge()[a][b][c][d][e];
+        }
+        if(crossover==1)
+        {
+            int cross=r.nextInt(1024);
+            int tmp=0;
+            for (int a = 0; a < 4; a++)
+                for (int b = 0; b < 4; b++)
+                    for (int c = 0; c < 4; c++)
+                        for (int d = 0; d < 4; d++)
+                            for (int e = 0; e < 4; e++) {
+                                tmp++;
+                                if (tmp<cross)
+                                    knowledge[a][b][c][d][e] = this.knowledge[a][b][c][d][e];
+                                else
+                                    knowledge[a][b][c][d][e] = prisonerGenetic.getKnowledge()[a][b][c][d][e];
+                            }
+        }
+        if(crossover==2)
+        {
+            int cross=r.nextInt(1024);
+            int cross2=r.nextInt(1024);
+            if(cross>cross2)
+            {
+                int temp =cross;
+                cross=cross2;
+                cross2=temp;
+            }
+            int tmp=0;
+            for (int a = 0; a < 4; a++)
+                for (int b = 0; b < 4; b++)
+                    for (int c = 0; c < 4; c++)
+                        for (int d = 0; d < 4; d++)
+                            for (int e = 0; e < 4; e++) {
+                                tmp++;
+                                if (tmp<cross&&cross2>tmp)
+                                    knowledge[a][b][c][d][e] = this.knowledge[a][b][c][d][e];
+                                else
+                                    knowledge[a][b][c][d][e] = prisonerGenetic.getKnowledge()[a][b][c][d][e];
+                            }
+        }
+
         return new PrisonerGenetic(knowledge);
     }
 }
