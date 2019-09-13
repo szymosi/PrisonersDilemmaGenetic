@@ -8,10 +8,13 @@ import java.util.Random;
 2-betray
 3-two betrays
  */
+
+
 public class Prisoner {
     private int points = 0;
     private int tactic;
     Random r = new Random();
+
 
     boolean gotBetrayed =false;
     boolean previousEnemyMove=r.nextBoolean();
@@ -19,7 +22,6 @@ public class Prisoner {
     public Prisoner(int tactic) {
         this.tactic = tactic;
     }
-//TODO more tactics/player as prisoner
     public boolean play() {
         switch (tactic) {
             case 1:
@@ -52,7 +54,4 @@ public class Prisoner {
         this.points += points;
     }
 
-    public int getPoints() {
-        return points;
-    }
 }

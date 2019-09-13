@@ -50,7 +50,7 @@ public class PrisonerGenetic {
     public void roundEnd(int result, int points) {
         if (result >= 0 && result < 4)
             memory.add(0, result);
-        this.points += points;
+        addPoints(points);
     }
 
     public void mutate(int numberOfMutations){

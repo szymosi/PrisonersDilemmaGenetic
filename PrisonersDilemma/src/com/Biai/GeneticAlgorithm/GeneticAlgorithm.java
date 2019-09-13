@@ -2,6 +2,7 @@ package com.Biai.GeneticAlgorithm;
 
 import com.Biai.Game.Game;
 
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,14 +11,15 @@ import java.util.Comparator;
 import java.util.Random;
 
 public class GeneticAlgorithm {
-    int population;
-    Game[] games;
-    int numberOfRounds;
-    int enemiesTactic;
-    float mutationChance;
-    int numberOfMutations;
-    int numberOfGenerations;
-    int selectionSize;
+    int population ;
+    Game[] games = null;
+    int numberOfRounds ;
+    int enemiesTactic ;
+    float mutationChance ;
+    int numberOfMutations ;
+    int numberOfGenerations ;
+    int selectionSize ;
+
 
     public GeneticAlgorithm(int population, int numberOfRounds, int enemiesTactic, float mutationChance,
                             int numberOfMutations, int numberOfGenerations, int selectionSize) {
@@ -40,6 +42,11 @@ public class GeneticAlgorithm {
         }
     }
 
+    private Game[] getGames()
+    {
+        return games;
+    }
+
     private void doRounds() {
 
         for (Game game : games) {
@@ -49,6 +56,8 @@ public class GeneticAlgorithm {
             System.out.print(game.getPrisonerGenetic().getPoints()+" ");
         }
     }
+
+
 
     private final ArrayList<PrisonerGenetic> getTheBestPrisoners() {
         ArrayList<PrisonerGenetic> prisoners = new ArrayList<PrisonerGenetic>();
@@ -95,12 +104,43 @@ public class GeneticAlgorithm {
         }
     }
 
-    private void writeDataToFile(String pathFile) throws IOException//TODO
+    private void writeDataToFile(String pathFile, Game[] games) //TODO
     {
-        FileWriter fileWriter = new FileWriter(pathFile);
+        FileWriter fw = null;
+        try{
+            fw = new FileWriter(pathFile);
+        }catch(IOException e)
+        {
+            e.printStackTrace();
+        }
 
-        for (int i = 0; i < population; i++) {
-            fileWriter.write(i + ": memory: ");
+        BufferedWriter bw = new BufferedWriter(fw);
+        try {
+            for (int i = 0; i < population; i++) {
+                Boolean[][][][][] knowledge = games[i].getPrisonerGenetic().getKnowledge();
+                bw.write(i + ": memory: " + games[i].getPrisonerGenetic().getPoints());
+                bw.newLine();
+                for (int a = 0; a < 4; a++)
+                    for (int b = 0; b < 4; b++)
+                        for (int c = 0; c < 4; c++)
+                            for (int d = 0; d < 4; d++)
+                                for (int e = 0; e < 4; e++)
+                                {
+                                    bw.write(a + " " + b + " " + c + " " + d + " " + e + " " + knowledge[a][b][c][d][e]);
+                                    bw.newLine();
+                                }
+                bw.write("-------------------------------------------");
+                bw.newLine();
+            }
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        try{
+            bw.close();
+            fw.close();
+        }catch (IOException e)
+        {
+            e.printStackTrace();
         }
     }
 
@@ -111,7 +151,7 @@ public class GeneticAlgorithm {
             createNewGeneration();
             mutateGeneration();
         }
-        writeDataToFile(filePath + "plik.txt");
+        writeDataToFile(filePath + "plik.txt", getGames());
 
     }
 }

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd718305-579d-46cf-9a64-ed3a592d12ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrisonersDilemma/PrisonersDilemma.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -40,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Prisoner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="27" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -48,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/PrisonerGenetic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="48" column="5" selection-start-line="7" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="731">
+              <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -57,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="709">
+              <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,13 +76,14 @@
         <option value="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Main.java" />
         <option value="$PROJECT_DIR$/PrisonersDilemma/PrisonersDilemma.iml" />
         <option value="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java" />
+        <option value="$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/PrisonerGenetic.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="950" />
     <option name="width" value="975" />
-    <option name="height" value="1048" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -200,18 +198,20 @@
       <workItem from="1560016282328" duration="123000" />
       <workItem from="1560271785687" duration="437000" />
       <workItem from="1560272271448" duration="363000" />
-      <workItem from="1561051785636" duration="15000" />
+      <workItem from="1561051785636" duration="345000" />
+      <workItem from="1561448686784" duration="40000" />
+      <workItem from="1561805276550" duration="617000" />
+      <workItem from="1568377633233" duration="740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1758000" />
+    <option name="totallyTimeSpent" value="3485000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17449665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -257,29 +257,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/Game/Prisoner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="27" column="5" selection-start-line="5" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/PrisonerGenetic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="48" column="5" selection-start-line="7" selection-end-line="48" selection-end-column="5" />
+        <state relative-caret-position="731">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PrisonersDilemma/src/com/Biai/GeneticAlgorithm/GeneticAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="709">
+          <caret line="90" column="31" lean-forward="true" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
