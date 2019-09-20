@@ -1,0 +1,1 @@
+java -jar PrisonersDilemma.jar C:\\Users\\Szymon\\Desktop 1 10 2 10 10 1 1

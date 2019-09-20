@@ -151,7 +151,7 @@ public class GeneticAlgorithm {
             createNewGeneration();
             mutateGeneration();
         }
-        writeDataToFile(filePath + "plik.txt", getGames());
+        writeDataToFile(filePath + "\\plik.txt", getGames());
 
     }
 }

@@ -30,7 +30,9 @@ public class PrisonerGenetic {
                             knowledge[a][b][c][d][e] = r.nextBoolean();
     }
 
-    public void addPoints(int points) {
+    public void addPoints(int points)
+    {
+        if(memory.size()>=5)
         this.points += points;
     }
 
